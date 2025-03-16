@@ -170,10 +170,23 @@ header {
 
 .note-card {
     width: 180px;
-    height: 180px;
+    height: 200px;
     background-color: var(--text-color);
     border: 0.5px solid var(--lightgrey);
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
+    overflow: scroll;
+}
+
+.note-card h3 {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.note-card img {
+    max-width: 100%;
+    width: 160px;
+    height: 90px;
+    object-fit: fill;
 }
