@@ -173,6 +173,7 @@ header {
 }
 
 .note-card {
+    cursor: pointer;
     width: 180px;
     height: 200px;
     background-color: var(--text-color);
