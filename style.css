@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Helvetica", sans-serif;
+    font-family: "Inter", "Helvetica", Arial, sans-serif;
 }
 
 :root {
@@ -33,6 +33,8 @@ hr {
     width: 250px;
     height: 100vh;
     position: fixed;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
 }
 
 #sidebar-links nav ul {
@@ -193,7 +195,12 @@ header {
 }
 
 @media screen and (max-width: 800px) {
-    #sidebar, #user span, #user-section i, #add-note {
+    #sidebar {
+        transform: translateX(-100%);
+        position: absolute;
+    }
+
+    #user span, #user-section i, #add-note {
         display: none;
     }
 
