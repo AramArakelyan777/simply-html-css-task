@@ -10,37 +10,65 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
     </head>
+
     <body>
         <aside id="sidebar">
             <section id="logo">
                 <img src="./assets/logo.png" alt="logo" />
             </section>
+
             <section id="sidebar-links">
-                <div class="sidebar-links-containers">
-                    <i class="fa fa-qrcode"></i>
-                    <a href="#">Overview</a>
-                </div>
-                <div class="sidebar-links-containers">
-                    <i class="fa fa-calendar-o"></i>
-                    <a href="#">Tasks</a>
-                </div>
-                <div class="sidebar-links-containers">
-                    <i class="fa fa-file-text-o"></i>
-                    <a href="#">Documents</a>
-                </div>
-                <div class="sidebar-links-containers">
-                    <i class="fa fa-clone"></i>
-                    <a href="#">Notes</a>
-                </div>
-                <div class="sidebar-links-containers">
-                    <i class="fa fa-line-chart"></i>
-                    <a href="#">Output</a>
-                </div>
-                <div class="sidebar-links-containers">
-                    <i class="fa fa-headphones"></i>
-                    <a href="#">Support</a>
-                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa fa-qrcode"></i>Overview</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-calendar-o"></i>Tasks</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-file-text-o"></i>Documents</a
+                            >
+                        </li>
+                        <li class="active">
+                            <a href="#"><i class="fa fa-clone"></i>Notes</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-line-chart"></i>Output</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-headphones"></i>Support</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <hr />
             </section>
         </aside>
+
+        <main>
+            <header>
+                <div id="search-bar">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search" />
+                </div>
+
+                <div id="user-section">
+                    <div id="user">
+                        <img src="./assets/user.png" alt="user-avatar" />
+                        <span>Hello, Peter!</span>
+                    </div>
+                    <i class="fa fa-bell-o"></i>
+                </div>
+            </header>
+
+            <section id="main-notes-container"></section>
+        </main>
     </body>
 </html>
