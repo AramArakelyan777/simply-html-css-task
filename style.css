@@ -1,0 +1,21 @@
+body {
+    background-color: #FBFBFB;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar {
+    background-color: #8981D8;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar-links {
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar-links a {
+    text-decoration: none;
+}
