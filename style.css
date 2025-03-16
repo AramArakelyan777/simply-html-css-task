@@ -2,11 +2,12 @@ body {
     background-color: #FBFBFB;
     margin: 0;
     padding: 0;
+    font-family: "Helvetica";
 }
 
 #sidebar {
     background-color: #8981D8;
-    width: 20vw;
+    width: 15vw;
     display: flex;
     flex-direction: column;
 }
@@ -18,4 +19,28 @@ body {
 
 #sidebar-links a {
     text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+#logo {
+    background-color: #2F2C85;
+    display: flex;
+    justify-content: center;
+}
+
+#logo img {
+    width: 150px;
+}
+
+.sidebar-links-containers {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-links-containers i {
+    color: white;
+    margin-right: 10px;
+    font-size: 20px;
 }
