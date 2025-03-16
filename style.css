@@ -11,6 +11,7 @@ body {
     --text-color: white;
     --lightgrey: #D0D0D0;
     --grey: #858499;
+    --hover-purple: rgba(137, 129, 216, 0.5);
 }
 
 hr {
@@ -33,7 +34,7 @@ hr {
 }
 
 #logo img {
-    width: 120px;
+    width: 110px;
 }
 
 #sidebar-links {
@@ -78,7 +79,6 @@ hr {
 
 main {
     margin-left: 250px;
-    background-color: var(--background);
 }
 
 header {
@@ -121,7 +121,7 @@ header {
     margin-left: 10px;
 }
 
-#main-notes-container {
-    padding: 20px;
-    height: 100vw;
+#filters-bar-note {
+    color: var(--primary-purple);
+    cursor: pointer;
 }
