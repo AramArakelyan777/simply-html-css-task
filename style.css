@@ -16,20 +16,11 @@ body {
 
 hr {
     color: var(--lightgrey);
-}
-
-#sidebar {
-    background-color: var(--primary-purple);
-    width: 250px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
+    width: 85%;
 }
 
 #logo {
     background-color: var(--dark-purple);
-    text-align: center;
     padding: 15px;
 }
 
@@ -37,8 +28,11 @@ hr {
     width: 110px;
 }
 
-#sidebar-links {
-    padding: 20px;
+#sidebar {
+    background-color: var(--primary-purple);
+    width: 250px;
+    height: 100vh;
+    position: fixed;
 }
 
 #sidebar-links nav ul {
@@ -77,6 +71,14 @@ hr {
     background: rgba(255, 255, 255, 0.2);
 }
 
+#sidebar-footer {
+    position: absolute;
+    bottom: 0;
+    color: var(--text-color);
+    font-size: 13px;
+    margin: 10px;
+}
+
 main {
     margin-left: 250px;
 }
@@ -93,12 +95,12 @@ header {
     padding: 10px;
     width: 250px;
     border: none;
-    font-size: 14px;
 }
 
 #user {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 #user img {
@@ -109,7 +111,7 @@ header {
 #user-section {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
 }
 
 #user span {
@@ -180,7 +182,6 @@ header {
 }
 
 .note-card h3 {
-    max-width: 100%;
     overflow: hidden;
 }
 
@@ -189,4 +190,25 @@ header {
     width: 160px;
     height: 90px;
     object-fit: fill;
+}
+
+@media screen and (max-width: 800px) {
+    #sidebar, #user span, #user-section i, #add-note {
+        display: none;
+    }
+
+    main {
+        margin-left: 0px;
+    }
+
+    #notes-container {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #search-bar input {
+        width: 150px;
+        padding: 5px;
+    }
 }
